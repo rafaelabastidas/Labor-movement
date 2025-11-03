@@ -1,3 +1,20 @@
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Prueba Plotly</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>body{max-width:900px;margin:50px auto;font-family:sans-serif}</style>
+</head>
+<body>
+  <h1>Gráfico de prueba</h1>
+  <div id="grafico" style="height:500px;"></div>
 
+  <script>
+    const data = [{ x:[1,2,3,4], y:[10,15,13,17], type:'scatter' }];
+    const layout = { title: 'Gráfico simple en GitHub Pages' };
+    Plotly.newPlot('grafico', data, layout);
+  </script>
+</body>
+</html>
 
